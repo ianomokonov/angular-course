@@ -1,0 +1,6 @@
+.content{
+    min-height: 500px;
+    width: calc(50% - 20px);
+    background-color: #fff;
+    border-radius: 5px;
+}

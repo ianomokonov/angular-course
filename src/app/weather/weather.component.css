@@ -1,0 +1,7 @@
+.content{
+    width: 100%;
+    height: calc(100% - 2.5rem);
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #5fb3f9;
+}
