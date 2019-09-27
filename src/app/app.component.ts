@@ -9,7 +9,6 @@ export class AppComponent {
   title = 'angular-course';
   item:any = null;
   updateItem(item){
-    console.log(item)
     this.item = item;
   }
 }
