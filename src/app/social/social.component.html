@@ -1,11 +1,11 @@
-<div class="content">
-    <div class="header">AQUASSEUR ROCKYARD</div>
+<div class="content" *ngIf="data">
+    <div class="header">{{data.title}}</div>
     <span class="line"></span>
     <div class="img">
-        <img src="https://potre.github.io/hot-weather-widget/assets/images/1/a18.jpeg" alt="">
+        <img [src]="data.img" alt="">
     </div>
     <div class="footer">
-         <div class="followers">788 <span>Followers</span></div>
-         <div class="following">118 <span>Folliwing</span></div>
+         <div class="followers">{{data.followers}} <div>Followers</div></div>
+         <div class="following">{{data.following}} <div>Following</div></div>
     </div>
 </div>

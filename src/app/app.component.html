@@ -1,14 +1,14 @@
 <div class="container">
     <div class="content">
         <div class="left">
-            <course-places-list></course-places-list>
+            <course-places-list (change)="updateItem($event)"></course-places-list>
         </div>
-        <div class="right">
+        <div class="right" >
             <div>
-                <course-weather></course-weather>
+                <course-weather [data]="item?.weather"></course-weather>
             </div>
             <div>
-                <course-social></course-social>
+                <course-social [data]="item?.social_info"></course-social>
             </div>
         </div>
     </div>
