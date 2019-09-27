@@ -1,6 +1,10 @@
 .container{
+    display: flex;justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.content{
     width: 44%;
-    margin: 100px auto;
     display: flex;
     justify-content: space-between;
     padding: 20px;
