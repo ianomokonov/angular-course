@@ -1,0 +1,15 @@
+<div class="search">
+    <input [formControl]="searchControl" type="text" placeholder="Введите строку поиска">
+</div>
+<div class="container-fluid" *ngIf="repos;else norepos">
+    <div class="repository" *ngFor="let rep of repos?.items">
+        <img [src]="rep.avatar_url">
+        <h2><a target="blank" [href]="rep.html_url">{{rep.login}}</a></h2>
+    </div>
+</div>
+
+<ng-template #norepos>
+    <div class="norepos">
+        <h2>Репозитории не найдены</h2>
+    </div>
+</ng-template>

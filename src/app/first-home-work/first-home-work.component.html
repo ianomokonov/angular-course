@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="content">
+        <div class="left">
+            <course-places-list (change)="updateItem($event)"></course-places-list>
+        </div>
+        <div class="right" >
+            <div>
+                <course-weather [data]="item?.weather"></course-weather>
+            </div>
+            <div>
+                <course-social [data]="item?.social_info"></course-social>
+            </div>
+        </div>
+    </div>
+    
+</div>

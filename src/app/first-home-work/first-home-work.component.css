@@ -1,0 +1,32 @@
+.container{
+    display: flex;justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.content{
+    width: 44%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.right, .left{
+    min-height: 500px;
+    
+    
+    border-radius: 8px;
+}
+.left{
+    width: 60%;
+    background-color: #fff;
+    margin-right: 2.5rem;
+    
+}
+.right{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.right div{
+    height: 50%;
+}

@@ -7,8 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-course';
-  item:any = null;
-  updateItem(item){
-    this.item = item;
-  }
+  
 }
